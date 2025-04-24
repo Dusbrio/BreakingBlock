@@ -1,6 +1,7 @@
 package net.dusbrio.breakingblock;
 
 import com.mojang.logging.LogUtils;
+import net.dusbrio.breakingblock.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.food.FoodProperties;
@@ -47,6 +48,9 @@ public class BreakingBlock
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        // Register mod assets
+        ModItems.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
