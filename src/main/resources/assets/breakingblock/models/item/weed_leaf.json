@@ -1,7 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "weed_leaf"
+    "layer0": "breakingblock:item/weed_leaf"
   }
-
 }
